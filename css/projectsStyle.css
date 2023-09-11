@@ -1,0 +1,217 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(2, 2, 17);
+  color: white;
+}
+#header {
+  display: flex;
+  background-color: rgb(7, 26, 44);
+  justify-content: space-around;
+  height: 55px;
+  width: 100%;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  margin: 0px 25px;
+}
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Lacquer", cursive;
+  padding: 5px 3px;
+  border-radius: 5px;
+}
+#navbar ul li a:hover {
+  color: rgb(2, 2, 17);
+  background-color: grey;
+}
+.portfolio {
+  text-shadow: 3px 3px 4px grey;
+}
+#left-section {
+  display: flex;
+  font-size: 1.5rem;
+  margin: 22px 0px;
+  align-items: center;
+  font-family: "Lacquer", cursive;
+  color: rgb(30, 150, 187);
+}
+#right-section {
+  margin: 20px 0px;
+}
+.hr {
+  border: 0px;
+  background-color: rgb(51, 14, 85);
+  height: 1px;
+  margin: 5px 10%;
+}
+.purple {
+  font-size: 1.5rem;
+  color: rgb(221, 91, 221);
+}
+/* Projects */
+
+/* C++ projects */
+
+#c-projects h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+/* C# projects */
+
+#cSharp-projects h1 {
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 3px 3px 4px rgb(88, 83, 83);
+}
+/* C# desktop projects */
+#cSharpDesktop-projects h1 {
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 3px 3px 4px rgb(88, 83, 83);
+}
+/* Html and Css projects */
+#htmlCss-projects {
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 3px 3px 4px rgb(88, 83, 83);
+}
+/* Microsoft Office Projects */
+#office-projects {
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 3px 3px 4px rgb(88, 83, 83);
+}
+
+/* utility classes of file projects */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-gap: 5px 10px;
+}
+.items {
+  margin: 40px 50px;
+  border-radius: 20px;
+  height: 400px;
+  width: 300px;
+  box-shadow: 0px 5px 20px rgb(93, 18, 155);
+}
+.items:hover {
+  padding: 0px 0px;
+  margin: 32px 50px;
+}
+.items img {
+  margin: 10px 10px;
+  height: 330px;
+  width: 94%;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.items img:hover {
+  transform: scale(1.05);
+}
+.items hr {
+  width: 245px;
+  border: 0px;
+  background-color: grey;
+  height: 1px;
+  margin: 5px 25px;
+}
+.desc {
+  position: relative;
+  background-color: rgb(2, 2, 17);
+  border-radius: 10px;
+  bottom: 5px;
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+}
+.desc:hover {
+  cursor: pointer;
+  height: 135px;
+  bottom: 135px;
+}
+.desc:hover p {
+  visibility: visible;
+}
+.items p {
+  color: grey;
+  padding: 10px 25px;
+  visibility: hidden;
+}
+.color {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(30, 150, 187);
+}
+footer {
+  height: 50px;
+  margin-top: 55px;
+  background-color: black;
+}
+footer div{
+  text-align: center;
+}
+#made {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* Media Quaries */
+
+@media screen and (max-width: 770px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 26, 44);
+    justify-content: center;
+    align-items: center;
+    height: 165px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #navbar ul li {
+    margin: 0px 17px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #navbar ul li {
+    margin: 0px 6px;
+  }
+  .items {
+    margin: 40px 30px;
+    border-radius: 20px;
+    height: 430px;
+    width: 250px;
+    box-shadow: 0px 5px 20px rgb(93, 18, 155);
+  }
+  .items hr {
+    width: 200px;
+  }
+  .portfolio {
+    font-size: 1.22rem;
+  }
+}

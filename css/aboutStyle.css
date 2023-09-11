@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(2, 2, 17);
+  color: white;
+}
+#header {
+  display: flex;
+  background-color: rgb(7, 26, 44);
+  justify-content: space-around;
+  height: 55px;
+  width: 100%;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  margin: 0px 25px;
+}
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Lacquer", cursive;
+  padding: 5px 3px;
+  border-radius: 5px;
+}
+#navbar ul li a:hover {
+  color: rgb(2, 2, 17);
+  background-color: grey;
+}
+.portfolio {
+  text-shadow: 3px 3px 4px grey;
+}
+#left-section {
+  display: flex;
+  font-size: 1.5rem;
+  margin: 22px 0px;
+  align-items: center;
+  font-family: "Lacquer", cursive;
+  color: rgb(30, 150, 187);
+}
+#right-section {
+  margin: 20px 0px;
+}
+.purple {
+  font-size: 2.5rem;
+  color: rgb(221, 91, 221);
+}
+#container {
+  min-width: 100%;
+  height: 100vh;
+}
+#box {
+  border-radius: 30px;
+  margin: 50px 130px;
+  padding: 5px 28px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgb(26, 173, 231);
+  height: 80vh;
+}
+#aboutimg {
+  height: 50vh;
+  margin: 45px 80px;
+  border-radius: 20px;
+  opacity: 0.8;
+  transition: all ease-in-out 1s;
+}
+#aboutimg:hover {
+  opacity: 0.6;
+}
+.leftsection {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 10px;
+  justify-content: center;
+  align-items: center;
+}
+.leftsection h2 {
+  font-family: "PT Serif", serif;
+  text-shadow: 3px 3px 5px grey;
+  margin-top: 65px;
+  margin-bottom: 40px;
+}
+.leftsection p {
+  color: grey;
+  margin-left: 32px;
+}
+.leftsection img {
+  margin-top: 30px;
+  height: 70px;
+}
+footer {
+  height: 50px;
+  margin-top: 55px;
+  background-color: black;
+}
+footer div{
+  text-align: center;
+}
+#made {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* Media Quaries */
+
+@media screen and (max-width: 1300px) {
+  #aboutimg {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #aboutimg {
+    height: 33vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #aboutimg {
+    height: 30vh;
+  }
+  #box {
+    flex-direction: column;
+    padding: 5px;
+  }
+  #aboutimg {
+    margin: -15px 80px;
+  }
+  .leftsection {
+    margin-top: -50px;
+    width: 65vw;
+  }
+  .rightsection {
+    margin-top: 45px;
+  }
+  .leftsection p {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  #aboutimg {
+    height: 25vh;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 26, 44);
+    justify-content: center;
+    align-items: center;
+    height: 165px;
+    width: 100%;
+  }
+  #aboutimg {
+    height: 25vh;
+  }
+  .leftsection {
+    margin-top: -30px;
+  }
+  .rightsection {
+    margin-top: 45px;
+  }
+  #box {
+    margin: 50px 75px;
+    height: 560px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #sign {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #aboutimg {
+    height: 22vh;
+  }
+  .leftsection {
+    margin-top: -30px;
+  }
+  #aboutimg {
+    margin: -15px 0px;
+}
+}
+
+@media screen and (max-width: 450px) {
+  #box {
+    margin: 50px 30px;
+    height: 600px;
+  }
+  .leftsection {
+    margin-top: -20px;
+  }
+}
+@media screen and (max-width: 405px) {
+  #navbar ul li {
+    margin: 0px 6px;
+  }
+  .portfolio {
+    font-size: 1.22rem;
+  }
+  .leftsection h2{
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  #box {
+    height: 635px;
+  }
+}
