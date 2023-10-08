@@ -12,6 +12,9 @@ body {
   justify-content: space-around;
   height: 55px;
   width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
 #navbar ul {
   display: flex;
@@ -81,6 +84,7 @@ body {
   margin-top: 30px;
   text-align: center;
   text-shadow: 3px 3px 4px rgb(88, 83, 83);
+  margin-top: 110px;
 }
 /* Microsoft Office Projects */
 #office-projects {
@@ -177,8 +181,11 @@ footer div{
     background-color: rgb(7, 26, 44);
     justify-content: center;
     align-items: center;
-    height: 165px;
+    height: 140px;
     width: 100%;
+  }
+  #htmlCss-projects{
+    margin-top: 180px;
   }
 }
 
