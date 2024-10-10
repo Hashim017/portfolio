@@ -5,8 +5,9 @@ function typer() {
       "<br/>C and C++ Expert.",
       "<br/>C# DESKTOP DEVELOPER.",
       "<br/>C# Developer.",
-      "<br/>HTML / CSS Expert.",
+      "<br/>HTML / CSS / JS Expert.",
       "<br/>WEB DEVELOPER.",
+      "<br/>Video Editor.",
     ],
     typeSpeed: 90,
   });

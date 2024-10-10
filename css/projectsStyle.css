@@ -138,13 +138,13 @@ body {
   width: 100%;
   border-radius: 20px;
 }
-.desc:hover {
+/* .desc:hover {
   cursor: pointer;
   height: 135px;
   bottom: 135px;
-}
+} */
 .desc:hover p {
-  visibility: visible;
+  visibility: hidden;
 }
 .items p {
   color: grey;
